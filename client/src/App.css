@@ -1,0 +1,56 @@
+.nav button a {
+  text-decoration: none;
+  color: white;
+}
+footer {
+  bottom: 0;
+  text-align: center;
+  /* padding: 2%; */
+  background-color: #4183c4;
+  position: absolute;
+  width: 96%;
+  padding: 2%;
+}
+.contactList {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 6%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 2%;
+}
+form div {
+  margin: 2%;
+}
+form h2 {
+  text-align: center;
+}
+.btn-card {
+  display: flex;
+  justify-content: center;
+}
+.btn-card svg:hover {
+  transform: scale(1);
+  box-shadow: 0 5px 10px -12.125px rgba(0, 0, 0, 0.2);
+  color: #4183c4;
+}
+.logo {
+  width: 5%;
+}
+
+h1 {
+  margin: 50px 0 40px 0 !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.homeContent {
+  margin: 50px 10%;
+  text-align: center;
+}
