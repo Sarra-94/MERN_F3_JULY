@@ -14,7 +14,9 @@ const ContactList = () => {
   const isError = useSelector((state) => state.contactReducer.isError);
 
   const dispatch = useDispatch();
-
+  useEffect(() => {
+    console.log("hello");
+  }, []);
   useEffect(() => {
     dispatch(getAllContacts());
   }, [dispatch]);

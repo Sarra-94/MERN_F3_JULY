@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory, useParams } from "react-router";
 
-import { addContact, editContact } from "../JS/actions/contacts";
+import { addContact, editContact, getContact } from "../JS/actions/contacts";
 
 const AddContact = () => {
   const [contact, setContact] = useState({});
@@ -16,7 +16,14 @@ const AddContact = () => {
 
   const params = useParams();
   const history = useHistory();
-
+  // ------------------------------------------------------
+  // when the component mount yjibli contact
+  useEffect(() => {
+    if (params.id) {
+      dispatch(getContact(params.id));
+    }
+  }, [params.id, dispatch]);
+  // when the component update
   useEffect(() => {
     if (params.id) {
       setedit(true);
